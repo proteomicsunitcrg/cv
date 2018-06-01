@@ -1,0 +1,41 @@
+[Term]
+id: LC:0000001
+name: Proxeon Biosystems instrument model
+def: "Proxeon Biosystems instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+LC:0000002
+name: EASY-nLC™ II LC 110
+def: "Proxeon Biosystems Easy-nLC II LC110."
+is_a: LC:0000001 ! Proxeon Biosystems instrument model
+
+[Term]
+LC:0000003
+name: EASY-nLC™ 1000 LC 120
+def: "Proxeon Biosystems Easy-nLC 1000 LC120."
+is_a: LC:0000001 ! Proxeon Biosystems instrument model
+
+[Term]
+LC:0000004
+name: Eksigent instrument model
+def: "Eksigent instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+LC:0000005
+name: Eksigent autosampler
+def: "Eksigent autosampler."
+is_a: LC:0000004 ! Eksigent instrument model
+
+[Term]
+LC:0000006
+name: Eksigent NanoLC AS-2 autosampler
+def: "Eksigent NanoLC AS-2 autosampler."
+is_a: is_a: LC:0000005 ! Eksigent autosampler
+
+[Term]
+LC:0000007
+name: Eksigent Nano Ultra LC 1D plus system
+def: "Eksigent Nano Ultra LC 1D plus system"
+is_a: LC:0000004 ! Eksigent instrument model
