@@ -34,6 +34,26 @@ import: ./unit.obo
 ontology: uo
 
 [Term]
+id: QC:0000001
+name: QC sample
+def: "Sample used for quality control purposes."
+is_a: MS:1000457 ! Sample
+
+[Term]
+id: QC:0000002
+name: QC1 sample
+def: "Low complexity sample used to evaluate instrument performance."
+is_a: QC:0000001 ! QC sample
+
+[Term]
+id: QC:0000003
+name: QC1 sample
+def: "Low complexity sample used to evaluate instrument performance."
+is_a: QC:0000001 ! QC sample
+
+
+
+[Term]
 id: QC:3000002
 name: QC metric relation
 def: "Parent term for QC metric relations (in contrast to QC metrics and types)." [PSI:QC]
