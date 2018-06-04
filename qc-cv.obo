@@ -115,12 +115,12 @@ name: retention time
 def: "retention time"
 
 [Term]
-id: QC:1000894 ! Similar to Median MS:1000927 (MS1-only)
+id: QC:1000927 ! Similar to Median MS:1000927 (MS1-only)
 name: Median IT MS1
 def: "Median Injection Time of identified peptides in MS1"
 
 [Term]
-id: QC:1000895 ! Similar to Median MS:1000927 (MS2-only)
+id: QC:1000928 ! Similar to Median MS:1000927 (MS2-only)
 name: Median IT MS2
 def: "Median Injection Time of identified peptides in MS2"
 
