@@ -33,6 +33,10 @@ remark: Filtered by Ancestor ID equals "UO:0000000"
 import: ./unit.obo
 ontology: uo
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! START QCloud CV added 04-Jun-18 by Roger Olivella
+
 [Term]
 id: QC:0000001
 name: QC sample
@@ -47,14 +51,14 @@ is_a: QC:0000001 ! QC sample
 
 [Term]
 id: QC:0000003
-name: QC1 sample
-def: "Low complexity sample used to evaluate instrument performance."
+name: QC2 sample
+def: "High complexity sample used to evaluate instrument performance."
 is_a: QC:0000001 ! QC sample
 
 [Term]
 id: QC:0000004
 name: QC3 sample
-def: "High complexity sample with isotopologues mixtures  used to evaluate instrument performance and ability to measure instrument dynamic range."
+def: "High complexity sample with isotopologues mixtures used to evaluate instrument performance and ability to measure instrument dynamic range."
 is_a: QC:0000001 ! QC sample
 
 [Term]
@@ -74,6 +78,60 @@ id: QC:0000007
 name: QC4L
 def: "Digested protein extract from K562 cells (Promega) plus 6x5 peptide reference mix (Promega). Ratio of the mixture is 100 fmol of the more concentrated peptide in the peptide mix in 25 ng of digested protein extract."
 is_a: QC:0000003 ! QC3sample
+
+[Term]
+id: QC:0000008 ! Similar to NIST DS-2A
+name: MS1 Spectral count
+def: "MS1 Spectral count"
+
+[Term]
+id: QC:0000009 ! Similar to NIST DS-2B
+name: MS2 Spectral count
+def: "MS2 Spectral count"
+
+[Term]
+id: QC:0000010
+name: Chromatogrpahic Resolution
+def: "Chromatogrpahic Resolution"
+
+[Term]
+id: QC:0000011
+name: Peak Capacity
+def: "Peak Capacity"
+
+[Term]
+id: QC:1000014 ! Similar to MS:1000014: accuracy (m/z or ppm)
+name: mass accuracy
+def: "mass accuracy"
+
+[Term]
+id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
+name: MS1 feature area or peak area
+def: "MS1 feature area or peak area"
+
+[Term]
+id: QC:1000894 ! Similar to MS:1000894: retention time
+name: retention time
+def: "retention time"
+
+[Term]
+id: QC:1000894 ! Similar to Median MS:1000927 (MS1-only)
+name: Median IT MS1
+def: "Median Injection Time of identified peptides in MS1"
+
+[Term]
+id: QC:1000895 ! Similar to Median MS:1000927 (MS2-only)
+name: Median IT MS2
+def: "Median Injection Time of identified peptides in MS2"
+
+[Term]
+id: QC:0000048 ! Similar to NIST MS1-2B
+name: TIC
+def: "Sum of all Total Ion Current per RT"
+
+! END QCloud CV added 04-Jun-18 by Roger Olivella
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 [Term]
 id: QC:3000002
