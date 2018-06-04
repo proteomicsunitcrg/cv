@@ -51,7 +51,29 @@ name: QC1 sample
 def: "Low complexity sample used to evaluate instrument performance."
 is_a: QC:0000001 ! QC sample
 
+[Term]
+id: QC:0000004
+name: QC3 sample
+def: "High complexity sample with isotopologues mixtures  used to evaluate instrument performance and ability to measure instrument dynamic range."
+is_a: QC:0000001 ! QC sample
 
+[Term]
+id: QC:0000005
+name: BSA-QC1 sample
+def: "Digested BSA"
+is_a: QC:0000001 ! QC1sample
+
+[Term]
+id: QC:0000006
+name: HeLa-QC2 sample
+def: "Digested protein extract from HeLa cells."
+is_a: QC:0000002 ! QC2sample
+
+[Term]
+id: QC:0000007
+name: QC4L
+def: "Digested protein extract from K562 cells (Promega) plus 6x5 peptide reference mix (Promega). Ratio of the mixture is 100 fmol of the more concentrated peptide in the peptide mix in 25 ng of digested protein extract."
+is_a: QC:0000003 ! QC3sample
 
 [Term]
 id: QC:3000002
