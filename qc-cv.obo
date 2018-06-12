@@ -33,9 +33,14 @@ remark: Filtered by Ancestor ID equals "UO:0000000"
 import: ./unit.obo
 ontology: uo
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! START QCloud CV added 04-Jun-18 by Roger Olivella
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! START QCloud CV added 04-Jun-18 by Roger Olivella and Dani Mancera
+
+[TERM]
+id: QC:9000001 ! Added Dani M. for database integrity
+name: Element quantification
+def: "element quantification"
 
 [Term]
 id: QC:0000001
@@ -108,31 +113,37 @@ def: "mass accuracy"
 id: QC:0000029
 name: total number of PSM
 def: "total number of PSM"
+is:a: QC:9000001
 
 [Term]
 id: QC:0000030
 name: total number of identified peptides
 def: "total number of identified peptides"
+is:a: QC:9000001
 
 [Term]
 id: QC:0000031
 name: total number of uniquely identified peptides
 def: "total number of uniquely identified peptides"
+is:a: QC:9000001
 
 [Term]
 id: QC:0000032
 name: total number of identified proteins
 def: "total number of identified proteins"
+is:a: QC:9000001
 
 [Term]
 id: QC:0000033
 name: total number of uniquely identified proteins
 def: "total number of uniquely identified proteins"
+is:a: QC:9000001
 
 [Term]
 id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
 name: MS1 feature area or peak area
 def: "MS1 feature area or peak area"
+is:a: QC:9000001
 
 [Term]
 id: QC:1000894 ! Similar to MS:1000894: retention time
