@@ -79,7 +79,7 @@ def: "Digested protein extract from HeLa cells."
 is_a: QC:0000002 ! QC2sample
 
 [Term]
-id: QC:0000007
+id: QC:0000009
 name: QC4L
 def: "Digested protein extract from K562 cells (Promega) plus 6x5 peptide reference mix (Promega). Ratio of the mixture is 100 fmol of the more concentrated peptide in the peptide mix in 25 ng of digested protein extract."
 is_a: QC:0000003 ! QC3sample
@@ -90,7 +90,7 @@ name: MS1 Spectral count
 def: "MS1 Spectral count"
 
 [Term]
-id: QC:0000009 ! Similar to NIST DS-2B
+id: QC:0000007 ! Similar to NIST DS-2B
 name: MS2 Spectral count
 def: "MS2 Spectral count"
 
