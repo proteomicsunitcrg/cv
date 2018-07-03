@@ -140,6 +140,13 @@ def: "total number of uniquely identified proteins"
 is:a: QC:9000001
 
 [Term]
+id: QC:1000086 ! Similar to MS:1000086
+name: full width at half-maximum
+def: "A measure of resolution represented as width of the peak at half peak height." [PSI:MS]
+synonym: "FWHM" EXACT []
+is_a: MS:1000012 ! resolution measurement method
+
+[Term]
 id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
 name: MS1 feature area or peak area
 def: "MS1 feature area or peak area"
