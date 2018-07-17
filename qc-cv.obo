@@ -179,6 +179,78 @@ id: QC:0000048 ! Similar to NIST MS1-2B
 name: TIC
 def: "Sum of all Total Ion Current per RT"
 
+[Term]
+id: QC:0000034
+name: total number of uniquely identified proteins CID
+def: "total number of uniquely identified proteins CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000035
+name: total number of uniquely identified proteins HCD
+def: "total number of uniquely identified proteins HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000036
+name: total number of uniquely identified proteins ETCID
+def: "total number of uniquely identified proteins ETCID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000037
+name: total number of uniquely identified proteins ETHCD
+def: "total number of uniquely identified proteins ETHCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000038
+name: total number of PSM CID
+def: "total number of PSM CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000039
+name: total number of PSM HCD
+def: "total number of PSM HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000040
+name: total number of PSM ETCID
+def: "total number of PSM ETCID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000041
+name: total number of PSM ETHCD
+def: "total number of PSM ETHCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000042
+name: total number of uniquely identified peptides CID
+def: "total number of uniquely identified peptides CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000043
+name: total number of uniquely identified peptides HCD
+def: "total number of uniquely identified peptides HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000044
+name: total number of uniquely identified peptides ETCID
+def: "total number of uniquely identified peptides ETCID"
+is:a: QC:9000001
+
+[Term]
+id: QC:0000045
+name: total number of uniquely identified peptides ETHCD
+def: "total number of uniquely identified peptides ETHCD"
+is:a: QC:9000001
+
 ! END QCloud CV added 04-Jun-18 by Roger Olivella
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
