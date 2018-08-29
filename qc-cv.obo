@@ -42,6 +42,11 @@ id: QC:9000001 ! Added Dani M. for database integrity
 name: Element quantification
 def: "element quantification"
 
+[TERM]
+id: QC:9000002 ! Added Dani M. for database integrity
+name: Median IT
+def: "Median IT"
+
 [Term]
 id: QC:0000001
 name: QC sample
@@ -168,11 +173,13 @@ def: "retention time"
 id: QC:1000927 ! Similar to Median MS:1000927 (MS1-only)
 name: Median IT MS1
 def: "Median Injection Time of identified peptides in MS1"
+is:a: QC:9000002
 
 [Term]
 id: QC:1000928 ! Similar to Median MS:1000927 (MS2-only)
 name: Median IT MS2
 def: "Median Injection Time of identified peptides in MS2"
+is:a: QC:9000002
 
 [Term]
 id: QC:0000048 ! Similar to NIST MS1-2B
