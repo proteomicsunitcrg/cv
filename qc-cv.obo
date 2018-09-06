@@ -39,8 +39,8 @@ ontology: uo
 
 [TERM]
 id: QC:9000001 ! Added Dani M. for database integrity
-name: Element quantification
-def: "element quantification"
+name: Total numbers
+def: "Total numbers"
 
 [TERM]
 id: QC:9000002 ! Added Dani M. for database integrity
@@ -162,7 +162,6 @@ is_a: MS:1000012 ! resolution measurement method
 id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
 name: MS1 feature area or peak area
 def: "MS1 feature area or peak area"
-is:a: QC:9000001
 
 [Term]
 id: QC:1000894 ! Similar to MS:1000894: retention time
