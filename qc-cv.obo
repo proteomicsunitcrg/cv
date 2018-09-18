@@ -181,9 +181,14 @@ def: "Median Injection Time of identified peptides in MS2"
 is:a: QC:9000002
 
 [Term]
+id: QC:1000285 ! Similar to MS:1000285: total ion current
+name: total ion current
+def: "retention time"
+
+[Term]
 id: QC:0000048 ! Similar to NIST MS1-2B
 name: TIC
-def: "Sum of all Total Ion Current per RT"
+def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
 
 [Term]
 id: QC:0000034
