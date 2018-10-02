@@ -156,7 +156,7 @@ id: QC:1010086 ! Similar to NIST C-3A
 name: median of full width at half-maximum 
 def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
 synonym: "FWHM" EXACT []
-is_a: MS:1000012 ! resolution measurement method
+is_a: QC:1010086 
 
 [Term]
 id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
