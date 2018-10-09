@@ -47,6 +47,12 @@ id: QC:9000002 ! Added Dani M. for database integrity
 name: Median IT
 def: "Median IT"
 
+
+[TERM]
+id: QC:9000003 ! Added Roger O. for database integrity
+name: Median FWHM
+def: "Median FWHM"
+
 [Term]
 id: QC:0000001
 name: QC sample
@@ -93,11 +99,37 @@ is_a: QC:0000003 ! QC3sample
 id: QC:0000008 ! Similar to NIST DS-2A
 name: MS1 Spectral count
 def: "MS1 Spectral count"
+is_a: QC:9000001 ! Total numbers
 
 [Term]
 id: QC:0000007 ! Similar to NIST DS-2B
 name: MS2 Spectral count
 def: "MS2 Spectral count"
+is_a: QC:9000001 ! Total numbers
+
+[Term]
+id: QC:1002001 ! Similar to NIST DS-2B
+name: MS2 Spectral count CID
+def: "MS2 Spectral count CID"
+is_a: QC:9000001 ! Total numbers
+
+[Term]
+id: QC:1002009 ! Similar to NIST DS-2B
+name: MS2 Spectral count HCD
+def: "MS2 Spectral count HCD"
+is_a: QC:9000001 ! Total numbers
+
+[Term]
+id: QC:1002017 ! Similar to NIST DS-2B
+name: MS2 Spectral count ETCID
+def: "MS2 Spectral count ETCID"
+is_a: QC:9000001 ! Total numbers
+
+[Term]
+id: QC:1002025 ! Similar to NIST DS-2B
+name: MS2 Spectral count ETHCD
+def: "MS2 Spectral count ETHCD"
+is_a: QC:9000001 ! Total numbers
 
 [Term]
 id: QC:0000010
@@ -115,9 +147,54 @@ name: mass accuracy
 def: "mass accuracy"
 
 [Term]
+id: QC:1002007 ! Similar to MS:1000014: accuracy (m/z or ppm)
+name: mass accuracy CID
+def: "mass accuracy CID"
+
+[Term]
+id: QC:1002015 ! Similar to MS:1000014: accuracy (m/z or ppm)
+name: mass accuracy HCD
+def: "mass accuracy HCD"
+
+
+[Term]
+id: QC:1002023 ! Similar to MS:1000014: accuracy (m/z or ppm)
+name: mass accuracy ETCID
+def: "mass accuracy ETCID"
+
+[Term]
+id: QC:1002031 ! Similar to MS:1000014: accuracy (m/z or ppm)
+name: mass accuracy ETHCD
+def: "mass accuracy ETHCD"
+
+[Term]
 id: QC:0000029
 name: total number of PSM
 def: "total number of PSM"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002004
+name: total number of PSM CID
+def: "total number of PSM CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002012
+name: total number of PSM HCD
+def: "total number of PSM HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002020
+name: total number of PSM ETCID
+def: "total number of PSM CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002028
+name: total number of PSM ETHCD
+def: "total number of PSM ETHCD"
 is:a: QC:9000001
 
 [Term]
@@ -133,6 +210,30 @@ def: "total number of uniquely identified peptides"
 is:a: QC:9000001
 
 [Term]
+id: QC:1002002
+name: total number of uniquely identified peptides CID
+def: "total number of uniquely identified peptides CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002010
+name: total number of uniquely identified peptides HCD
+def: "total number of uniquely identified peptides HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002018
+name: total number of uniquely identified peptides ETCID
+def: "total number of uniquely identified peptides ETCID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002026
+name: total number of uniquely identified peptides ETHCD
+def: "total number of uniquely identified peptides ETHCD"
+is:a: QC:9000001
+
+[Term]
 id: QC:0000032
 name: total number of identified proteins
 def: "total number of identified proteins"
@@ -145,6 +246,30 @@ def: "total number of uniquely identified proteins"
 is:a: QC:9000001
 
 [Term]
+id: QC:1002003
+name: total number of uniquely identified proteins CID
+def: "total number of uniquely identified proteins CID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002011
+name: total number of uniquely identified proteins HCD
+def: "total number of uniquely identified proteins HCD"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002019
+name: total number of uniquely identified proteins ETCID
+def: "total number of uniquely identified proteins ETCID"
+is:a: QC:9000001
+
+[Term]
+id: QC:1002025
+name: total number of uniquely identified proteins ETHCD
+def: "total number of uniquely identified proteins ETHCD"
+is:a: QC:9000001
+[Term]
+
 id: QC:1000086 ! Similar to MS:1000086
 name: full width at half-maximum
 def: "A measure of resolution represented as width of the peak at half peak height." [PSI:MS]
@@ -156,7 +281,35 @@ id: QC:1010086 ! Similar to NIST C-3A
 name: median of full width at half-maximum 
 def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
 synonym: "FWHM" EXACT []
-is_a: QC:1010086 
+is_a: QC:9000003
+
+[Term]
+id: QC:1002008 ! Similar to NIST C-3A 
+name: median of full width at half-maximum CID 
+def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
+synonym: "FWHM" EXACT []
+is_a: QC:9000003
+
+[Term]
+id: QC:1002016 ! Similar to NIST C-3A 
+name: median of full width at half-maximum HCD
+def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
+synonym: "FWHM" EXACT []
+is_a: QC:9000003
+
+[Term]
+id: QC:1002024 ! Similar to NIST C-3A 
+name: median of full width at half-maximum ETCID 
+def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
+synonym: "FWHM" EXACT []
+is_a: QC:9000003
+
+[Term]
+id: QC:1002032 ! Similar to NIST C-3A 
+name: median of full width at half-maximum ETHCD
+def: "A measure of resolution represented as median of width of the peak at half peak height." [PSI:MS]
+synonym: "FWHM" EXACT []
+is_a: QC:9000003
 
 [Term]
 id: QC:1001844 ! Similar to MS:1001844: MS1 feature area
@@ -181,6 +334,30 @@ def: "Median Injection Time of identified peptides in MS2"
 is:a: QC:9000002
 
 [Term]
+id: QC:1002005 ! Similar to Median MS:1000927 (MS2-only)
+name: Median IT MS2 CID
+def: "Median Injection Time of identified peptides in MS2"
+is:a: QC:9000002
+
+[Term]
+id: QC:1002013 ! Similar to Median MS:1000927 (MS2-only)
+name: Median IT MS2 HCD
+def: "Median Injection Time of identified peptides in MS2"
+is:a: QC:9000002
+
+[Term]
+id: QC:1002021 ! Similar to Median MS:1000927 (MS2-only)
+name: Median IT MS2 ETCID
+def: "Median Injection Time of identified peptides in MS2"
+is:a: QC:9000002
+
+[Term]
+id: QC:1002029 ! Similar to Median MS:1000927 (MS2-only)
+name: Median IT MS2 ETHCD
+def: "Median Injection Time of identified peptides in MS2"
+is:a: QC:9000002
+
+[Term]
 id: QC:1000285 ! Similar to MS:1000285: total ion current
 name: total ion current
 def: "retention time"
@@ -189,78 +366,6 @@ def: "retention time"
 id: QC:0000048 ! Similar to NIST MS1-2B
 name: TIC
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
-
-[Term]
-id: QC:0000034
-name: total number of uniquely identified proteins CID
-def: "total number of uniquely identified proteins CID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000035
-name: total number of uniquely identified proteins HCD
-def: "total number of uniquely identified proteins HCD"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000036
-name: total number of uniquely identified proteins ETCID
-def: "total number of uniquely identified proteins ETCID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000037
-name: total number of uniquely identified proteins ETHCD
-def: "total number of uniquely identified proteins ETHCD"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000038
-name: total number of PSM CID
-def: "total number of PSM CID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000039
-name: total number of PSM HCD
-def: "total number of PSM HCD"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000040
-name: total number of PSM ETCID
-def: "total number of PSM ETCID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000041
-name: total number of PSM ETHCD
-def: "total number of PSM ETHCD"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000042
-name: total number of uniquely identified peptides CID
-def: "total number of uniquely identified peptides CID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000043
-name: total number of uniquely identified peptides HCD
-def: "total number of uniquely identified peptides HCD"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000044
-name: total number of uniquely identified peptides ETCID
-def: "total number of uniquely identified peptides ETCID"
-is:a: QC:9000001
-
-[Term]
-id: QC:0000045
-name: total number of uniquely identified peptides ETHCD
-def: "total number of uniquely identified peptides ETHCD"
-is:a: QC:9000001
 
 ! END QCloud CV added 04-Jun-18 by Roger Olivella
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
