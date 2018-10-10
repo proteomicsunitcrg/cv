@@ -264,7 +264,7 @@ def: "total number of uniquely identified proteins ETCID"
 is:a: QC:9000001
 
 [Term]
-id: QC:1002025
+id: QC:1002027
 name: total number of uniquely identified proteins ETHCD
 def: "total number of uniquely identified proteins ETHCD"
 is:a: QC:9000001
