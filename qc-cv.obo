@@ -328,6 +328,29 @@ def: "Median Injection Time of identified peptides in MS1"
 is:a: QC:9000002
 
 [Term]
+id: QC:1000933 ! Similar to Median MS:1000927 (MS1-only)
+name: Median IT MS1 CID
+def: "Median Injection Time of identified peptides in MS1"
+is:a: QC:9000002
+
+[Term]
+id: QC:1000934 ! Similar to Median MS:1000927 (MS1-only)
+name: Median IT MS1 HCD
+def: "Median Injection Time of identified peptides in MS1"
+is:a: QC:9000002
+
+[Term]
+id: QC:1000935 ! Similar to Median MS:1000927 (MS1-only)
+name: Median IT MS1 ETCID
+def: "Median Injection Time of identified peptides in MS1"
+is:a: QC:9000002
+[Term]
+id: QC:1000936 ! Similar to Median MS:1000927 (MS1-only)
+name: Median IT MS1 ETHCD
+def: "Median Injection Time of identified peptides in MS1"
+is:a: QC:9000002
+
+[Term]
 id: QC:1000928 ! Similar to Median MS:1000927 (MS2-only)
 name: Median IT MS2
 def: "Median Injection Time of identified peptides in MS2"
