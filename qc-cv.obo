@@ -234,13 +234,13 @@ def: "total number of uniquely identified peptides ETHCD"
 is:a: QC:9000001
 
 [Term]
-id: QC:0000032
+id: QC:0000033
 name: total number of identified proteins
 def: "total number of identified proteins"
 is:a: QC:9000001
 
 [Term]
-id: QC:0000033
+id: QC:0000032
 name: total number of uniquely identified proteins
 def: "total number of uniquely identified proteins"
 is:a: QC:9000001
