@@ -145,27 +145,32 @@ def: "Peak Capacity"
 id: QC:1000014 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy
 def: "mass accuracy"
+is:a: QC:9000004
 
 [Term]
 id: QC:1002007 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy CID
 def: "mass accuracy CID"
+is:a: QC:9000004
 
 [Term]
 id: QC:1002015 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy HCD
 def: "mass accuracy HCD"
+is:a: QC:9000004
 
 
 [Term]
 id: QC:1002023 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy ETCID
 def: "mass accuracy ETCID"
+is:a: QC:9000004
 
 [Term]
 id: QC:1002031 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy ETHCD
 def: "mass accuracy ETHCD"
+is:a: QC:9000004
 
 [Term]
 id: QC:0000029
