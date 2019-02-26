@@ -399,21 +399,25 @@ def: "The sum of all the separate ion currents carried by the ions of different 
 id: QC:1000937 ! Similar to NIST MS1-2B
 name: TIC CID
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
+is:a: QC:9000005
 
 [Term]
 id: QC:1000938 ! Similar to NIST MS1-2B
 name: TIC HCD
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
+is:a: QC:9000005
 
 [Term]
 id: QC:1000939 ! Similar to NIST MS1-2B
 name: TIC ETCID
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
+is:a: QC:9000005
 
 [Term]
 id: QC:1000940 ! Similar to NIST MS1-2B
 name: TIC ETHCD
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
+is:a: QC:9000005
 
 ! END QCloud CV added 04-Jun-18 by Roger Olivella
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
