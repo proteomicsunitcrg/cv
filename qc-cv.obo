@@ -145,32 +145,32 @@ def: "Peak Capacity"
 id: QC:1000014 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy
 def: "mass accuracy"
-is:a: QC:9000004
+is:a: QC:1000014
 
 [Term]
 id: QC:1002007 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy CID
 def: "mass accuracy CID"
-is:a: QC:9000004
+is:a: QC:1000014
 
 [Term]
 id: QC:1002015 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy HCD
 def: "mass accuracy HCD"
-is:a: QC:9000004
+is:a: QC:1000014
 
 
 [Term]
 id: QC:1002023 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy ETCID
 def: "mass accuracy ETCID"
-is:a: QC:9000004
+is:a: QC:1000014
 
 [Term]
 id: QC:1002031 ! Similar to MS:1000014: accuracy (m/z or ppm)
 name: mass accuracy ETHCD
 def: "mass accuracy ETHCD"
-is:a: QC:9000004
+is:a: QC:1000014
 
 [Term]
 id: QC:0000029
@@ -418,6 +418,31 @@ id: QC:1000940 ! Similar to NIST MS1-2B
 name: TIC ETHCD
 def: "The sum of all the separate ion currents carried by the ions of different m/z contributing to a complete mass spectrum or in a specified m/z range of a mass spectrum." [PSI:MS]
 is:a: QC:9000005
+
+[Term]
+id: QC:1000950 ! Similar to MS:1000894: retention time
+name: retention time CID
+def: "retention time"
+is:a: QC:1000894
+
+[Term]
+id: QC:1000951 ! Similar to MS:1000894: retention time
+name: retention time HCD
+def: "retention time"
+is:a: QC:1000894
+
+[Term]
+id: QC:1000952 ! Similar to MS:1000894: retention time
+name: retention time ETCID
+def: "retention time"
+is:a: QC:1000894
+
+[Term]
+id: QC:1000953 ! Similar to MS:1000894: retention time
+name: retention time ETHCD
+def: "retention time"
+is:a: QC:1000894
+
 
 ! END QCloud CV added 04-Jun-18 by Roger Olivella
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
