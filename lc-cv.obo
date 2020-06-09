@@ -37,7 +37,7 @@ is_a: LC:0000005 ! Eksigent autosampler
 [Term]
 id: LC:0000007
 name: Nano Ultra LC 1D plus system
-def: "Eksigent Nano Ultra LC 1D plus system"
+def: "Eksigent Nano Ultra LC 1D plus system."
 is_a: LC:0000004 ! Eksigent instrument model
 
 [Term]
