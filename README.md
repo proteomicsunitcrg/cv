@@ -1,4 +1,4 @@
-# QCloud CV  
+# QCloud2 CV  
 
 Controlled vocabullary OBO documents that are currently used in the QCloud2 website: 
 
