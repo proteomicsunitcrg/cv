@@ -1,0 +1,521 @@
+[Term]
+id: TS:0000001
+name: Non conformity
+def: "Monitored parameter out of range"
+is_a: MS:1000547 ! Object attribute
+
+[Term]
+id: TS:0000002
+name: Cause 
+def: "Cause that generates a problem."
+is_a: MS:1000547 ! Object attribute
+
+[Term]
+id: TS:0000003 
+name: Decrease of MS1 signal
+def: "The intensity of the signal in MS1 is lower than expected"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000065 MS1 problems
+
+[Term]
+id: TS:0000004
+name: Sample carry over
+def: "Part of the analyte present in a sample appears to be presest in the next or following samples."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal
+part_of: TS:0000011 The intensity of the signal in MS1 fluctuates
+part_of: TS: 0000019 ! No signal in MS1
+part_of: TS: 0000020 ! Bad chromatography
+
+[Term]
+id: TS:0000005
+name: Air bubble in QC sample vial
+def: "Air bubbles are present in the QC sample vial."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal
+
+[Term]
+id: TS:0000006 
+name: Bad QC sample
+def: "QC sample is not correct."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal
+
+[Term]
+id: TS:0000007
+name: Empty solvents
+def: "Bottles from LC solvents are empty."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal 
+part_of: TS: 0000019 ! No signal in MS1
+
+[Term]
+id: TS:0000008
+name: Air in the chromatographic path
+def: "Air bubbles in the chromatographic path."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal
+part_of: TS:0000020 ! Bad chromatography
+
+[Term]
+id: TS:0000009
+name: Deteriorated column
+def: "Chromatographic column is deteriorated."
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal 
+part_of: TS: 0000014 ! Loss of MS1 signal in the central part of the chromatogram
+part_of: TS:0000020 ! Bad chromatography
+
+[Term]
+id: TS:0000010
+name: Column overpressure
+def: "The column pressure is above the set limits"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000003 ! Loss of MS1 signal
+
+[Term]
+id: TS:0000011 
+name: MS1 signal fluctuation
+def: "The intensity of the signal in MS1 is sometimes lower than expected and sometimes inside the thresholds of acceptance."
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000065 MS1 problems
+
+[Term]
+id: TS:0000012
+name: Dirty column emitter
+def: "The emitter of the column is dirty"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000011 The intensity of the signal in MS1 fluctuates
+part_of: TS: 0000019 ! No signal in MS1
+
+[Term]
+id: TS:0000013
+name: Dirty ion transfer tube
+def: "The ion transfer tube is dirty"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000011 The intensity of the signal in MS1 fluctuates
+part_of: TS: 0000019 ! No signal in MS1
+
+[Term]
+id: TS:0000014
+name: Loss of MS1 signal in the central part of the chromatogram
+def: "The intensity of the signal in MS1 for complex samples is lower than expected only in the central part of the chromatogram"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000065 MS1 problems
+
+[Term]
+id: TS:0000015
+name: Dirty ion path
+def: "The ion path is dirty"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000014 Loss of MS1 signal in the central part of the chromatogram
+
+[Term]
+id: TS:0000016
+name: Sample injection step does not finish
+def: "Sample injection process get stacked in the loading sample step"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000017
+name: Sample too concentrated
+def: "The amount of injected sample is too high"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000016 Sample injection step does not finish
+
+
+[Term]
+id: TS:0000018
+name: Dirty sample
+def: "Sample is contaminated with non peptidic compounds"
+is_a: TS:0000002 ! Cause
+part_of: TS:0000016 Sample injection step does not finish
+
+[Term]
+id: TS:0000019
+name: No signal in MS1
+def: "There is no signal in MS1"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000065 MS1 problems
+
+[Term]
+id: TS:0000020
+name: Bad chromatography
+def: "The shape, intensity or retention times of the chromatographic profile do not correspond with the expected"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000021
+name: Leak in the chromatographic system
+def: "There is a leak of solvent in the chromatographic system"
+is_a: TS:0000002 ! Cause
+part_of: TS: 0000020 ! Bad chromatography
+
+[Term]
+id: TS:0000022
+name: Uncalibrated masses
+def: "The mass accuracy of the measured peptides is out of specifications"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000065 MS1 problems
+
+[Term]
+id: TS:0000023
+name: Communication error
+def: "The acquisition computer cannot connect with the instrument"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000024
+name: Instrument Problem
+def: "Instrument indicia that are associated with a performance out of the limits of acceptance."
+is_a: MS:1000547 ! Object attribute
+
+[Term]
+id: TS:0000025
+name: Action
+def: "Action Taken to solve a problem"
+is_a: MS:1000547 ! Object attribute
+
+[Term]
+id: TS:0000026
+name: Test 
+def: "Action taken to diagnose a problem"
+is_a: MS:1000547 ! Object attribute 
+
+[Term]
+id: TS:0000027
+name: Problem solved
+def: "The problem has been solved and the instrument is ready to use"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000028
+name: Column changed
+def: "The chromatographic column has been changed"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000029
+name: Pre-column changed
+def: "The chromatographic pre-column has been changed"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000030
+name: MS cleaned
+def: "The mass spectrometer has been cleaned"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000031
+name: Ion transfer tube changed
+def: "The ion transfer tube has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000035 MS mainteinance
+
+[Term]
+id: TS:0000032
+name: Rotor seal changed
+def: "The rotor seal has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000033
+name: Piston seal changed
+def: "The piston seal has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000034
+name: LC maintenance
+def: "Replacement or cleaning of parts of the LC has been done"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000035
+name: MS maintenance
+def: "Replacement or cleaning of parts of the MS has been done"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000036
+name: LC cleaned
+def: "The chromatographic path of the LC system has been cleaned"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000037
+name: QC aliquote changed
+def: "The QC aliquote has been changed"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000038
+name: MS calibration
+def: "The mass spectrometer has been calibrated"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000039
+name: Service Visit
+def: "Service engineers have come to check the instrument"
+is_a: TS:0000025 ! Action
+
+[Term]
+id: TS:0000040
+name: Decrease of MS2 signal
+def: "The intensity of the signal in MS2 is lower than expected"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000041
+name: Overpressure in the chromatographic system
+def: "The pressure of the chromatographic system exceeds the maximum set value"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000042 
+name: Spray issues
+def: "The sample is not properly sprayed in the ion source"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000076 Source problems
+
+[Term]
+id: TS:0000043
+name: Ion source cleaning
+def: "The ion source has been cleaned"
+is_a: TS:0000025 ! Action
+part_of: TS:0000030 MS cleaned
+
+[Term]
+id: TS:0000044
+name: MS full cleaning
+def: "The full ion path of the instrument has been cleaned"
+is_a: TS:0000025 ! Action
+part_of: TS:0000030 MS cleaned
+
+[Term]
+id: TS:0000045
+name: Sample loop changed
+def: "The sample loop has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+
+[Term]
+id: TS:0000046
+name: Sample needle changed
+def: "The autosampler needle has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000047
+name: Column-out changed
+def: "The capillar that goes from Valve S to the column assembly's inlet has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000048
+name: Waste-in changed
+def: "The capillar that goes from the column assembly's inlet to valve W has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000049
+name: Chromatographic path cleaned
+def: "The chromatographic path of the LC system has been cleaned"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000050
+name: Column cleaned
+def: "The chromatographic column has been cleaned"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance 
+part_of: TS:0000049 Chromatographic path cleaned
+
+[Term]
+id: TS:0000051
+name: Loop cleaned 
+def: "The injection loop has been cleaned"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000049 Chromatographic path cleaned
+
+[Term]
+id: TS:0000052
+name: Solvents mainteinance
+def: "The chromatographic solvents have been replaced, refilled or emptied "
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+
+[Term]
+id: TS:0000053
+name: Solvent S Filled
+def: "Solvent S has been filled"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000054
+name: Solvent S Changed
+def: "Solvent S has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000055
+name: Solvent A Filled
+def: "Solvent A has been filled"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000056
+name: Solvent A Changed
+def: "Solvent A has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000057
+name: Solvent B Filled
+def: "Solvent B has been filled"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000058
+name: Solvent B Changed 
+def: "Solvent B has been changed"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance 
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000059
+name: Solvent W (empty)
+def: "Solvent W has been emptied"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000052 Solvents mainteinance
+
+[Term]
+id: TS:0000060
+name: QC01 aliquote changed
+def: "The vial with the QC 01 sample has been replaced with a new one"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000037 QC aliquote changed
+
+[Term]
+id: TS:0000061
+name: QC02 aliquote changed
+def: "The vial with the QC02 sample has been replaced with a new one"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance
+part_of: TS:0000037 QC aliquote changed
+
+[Term]
+id: TS:0000062
+name: QC03 aliquote changed
+def: "The vial with the QC sample has been replaced with a new one"
+is_a: TS:0000025 ! Action
+part_of: TS:0000034 LC mainteinance 
+part_of: TS:0000037 QC aliquote changed
+
+[Term]
+id: TS:0000063
+name: Check mass 
+def: "The accuracy of the mass measurements has been checked"
+is_a: TS:0000025 ! Action
+part_of: TS:0000035 MS mainteinance
+part_of: TS:0000038 MS calibration
+
+[Term]
+id: TS:0000064
+name: Full calibration
+def: "The MS instrument has been fully calibrated"
+is_a: TS:0000025 ! Action
+part_of: TS:0000035 MS mainteinance 
+part_of: TS:0000038 MS calibration
+
+[Term]
+id: TS:0000065
+name: MS1 problems
+def: "The signal in MS1 is different than expected"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000066
+name: MS2 problems
+def: "The signal in MS2 is different than expected"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000067
+name: Chromatographic problems
+def: "An issue is detected in the chromatography"
+is_a: TS:0000024 ! Instrument Problem
+
+[Term]
+id: TS:0000068
+name: Carry over 
+def: "Contamination which causes sample peaks to re-appear in later runs"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000069
+name: Clogged paths 
+def: "Part of the chromatographic part ic clogged"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000070
+name: Column clogged
+def: "Chromatographic column is clogged"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000071
+name: Column-out clogged
+def: "The column-out tube is clogged"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000072
+name: Waste-in clogged
+def: "The waste-in tube is clogged"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000073
+name: Loop clogged
+def: "The injection loop is clogged"
+is_a: TS:0000024 ! Instrument Problem
+part_of: TS00000069 Chromatographic problems
+
+[Term]
+id: TS:0000074
+name: Source Problems
+def: "The ion source is not working properly"
+is_a: TS:0000024 ! Instrument Problem
