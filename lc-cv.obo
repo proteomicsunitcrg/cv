@@ -5,37 +5,139 @@ def: "Proxeon Biosystems instrument model."
 is_a: MS:1000031 ! instrument model
 
 [Term]
-LC:0000002
-name: EASY-nLC™ II LC 110
+id: LC:0000002
+name: EASY-nLC II LC 110 
 def: "Proxeon Biosystems Easy-nLC II LC110."
 is_a: LC:0000001 ! Proxeon Biosystems instrument model
 
 [Term]
-LC:0000003
-name: EASY-nLC™ 1000 LC 120
+id: LC:0000003
+name: EASY-nLC 1000 LC 120
 def: "Proxeon Biosystems Easy-nLC 1000 LC120."
-is_a: LC:0000001 ! Proxeon Biosystems instrument model
+is_a: is_a: LC:0000001 ! Proxeon Biosystems instrument model
 
 [Term]
-LC:0000004
+id: LC:0000004
 name: Eksigent instrument model
 def: "Eksigent instrument model."
 is_a: MS:1000031 ! instrument model
 
 [Term]
-LC:0000005
+id: LC:0000005
 name: Eksigent autosampler
 def: "Eksigent autosampler."
 is_a: LC:0000004 ! Eksigent instrument model
 
 [Term]
-LC:0000006
-name: Eksigent NanoLC AS-2 autosampler
+id: LC:0000006
+name: NanoLC AS-2 autosampler
 def: "Eksigent NanoLC AS-2 autosampler."
-is_a: is_a: LC:0000005 ! Eksigent autosampler
+is_a: LC:0000005 ! Eksigent autosampler
 
 [Term]
-LC:0000007
-name: Eksigent Nano Ultra LC 1D plus system
+id: LC:0000007
+name: Nano Ultra LC 1D plus system
 def: "Eksigent Nano Ultra LC 1D plus system"
 is_a: LC:0000004 ! Eksigent instrument model
+
+[Term]
+id: LC:0000008
+name: Thermo Scientific instrument model
+def: "Thermo Scientific instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+id: LC:0000009
+name: Thermo Scientific Dionex autosampler
+def: "Thermo Scientific Dionex autosampler"
+is_a: LC:0000008 ! Thermo Scientific instrument model
+
+[Term]
+id: LC:0000010
+name: Ultimate 3000 WPS-3000RS Autosampler
+def: "Thermo Scientific Dionex Ultimate 3000 WPS-3000RS Autosampler"
+is_a: LC:0000009 ! Thermo Scientific Dionex autosampler
+
+[Term]
+id: LC:0000011
+name: Ultimate 3000 NCS-3500RS LC system
+def: "Thermo Scientific Dionex Ultimate 3000 NCS-3500RS LC system"
+is_a: LC:0000008 ! Thermo Scientific instrument model
+
+[Term]
+id: LC:0000012
+name: UltiMate 3000 RSLC nano LC system
+def: "Thermo Scientific Dionex UltiMate 3000 RSLC nano LC system"
+is_a: LC:0000008 ! Thermo Scientific instrument model
+
+[Term]
+id: LC:0000013
+name: Ultimate 3000 Pro-flow RSLC nano LC system
+def: "Thermo Scientific Dionex UltiMate 3000 RSLC nano LC system with Pro-Flow technology"
+is_a: LC:0000008 ! Thermo Scientific instrument model
+
+[Term]
+id: LC:0000014
+name: Waters instrument model
+def: "Waters instrument model"
+is_a: MS:1000031 ! instrument model
+
+[Term]
+id: LC:0000015
+name: ACQUITY UPLC M-Class System
+def: "ACQUITY UPLC M-Class System"
+is_a: LC:0000014 ! Waters instrument model
+
+[Term]
+id: LC:0000016
+name: EASY-nLC 1200
+def: "Thermo Scientific EASY-nLC 1200"
+is_a: LC:0000008 ! Thermo Scientific instrument model
+
+[Term]
+id: LC:0000017
+name: Agilent instrument model
+def: "Agilent Scientific instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+id: LC:0000018
+name: 1100 LC system
+def: "Agilent 1100 LC system"
+is_a: LC:0000018 ! Agilent instrument model
+
+[Term]
+id: LC:0000019
+name: Ekspert nanoLC 425
+def: "Eksigent Ekspert nanoLC 425"
+is_a: LC:0000004 ! Eksigent instrument model
+
+[Term]
+id: LC:0000020
+name: Sciex instrument model
+def: "Sciex instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+id: LC:0000021
+name: M3 microLC system
+def: "Sciex M3 microLC system"
+is_a: LC:0000020 ! Sciex instrument model
+
+[Term]
+id: LC:0000022
+name: 1200 LC system
+def: "Agilent 1200 LC system"
+is_a: LC:0000018 ! Agilent instrument model
+
+[Term]
+id: LC:0000023
+name: Bruker instrument model
+def: "Bruker Scientific instrument model."
+is_a: MS:1000031 ! instrument model
+
+[Term]
+id: LC:0000024
+name: nano Elute LC system
+def: "Bruker nano Elute LC system"
+is_a: LC:0000018 ! Bruker instrument model
