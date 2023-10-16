@@ -141,3 +141,9 @@ id: LC:0000024
 name: nano Elute LC system
 def: "Bruker nano Elute LC system"
 is_a: LC:0000018 ! Bruker instrument model
+
+[Term]
+id: LC:0000025
+name: Vanquish Neo
+def: "Thermo LC system"
+is_a: LC:0000008 ! Thermo instrument model
